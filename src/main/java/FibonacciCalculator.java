@@ -1,19 +1,20 @@
 public class FibonacciCalculator {
 
-    public static int calculate(int firstNumber, int secondNumber) {
+        public static int calculate(int firstNumber, int secondNumber) {
 
-        int sum = 0;
 
-        do {
-            sum = firstNumber + secondNumber;
-            firstNumber = secondNumber;
-            secondNumber = sum;
+            int sum = 0;
+            int sumNumbers = firstNumber + secondNumber;
+            while (secondNumber < 4000) {
+                if (secondNumber % 2 == 0) {
+                    sum += secondNumber;
+                }
 
-            if (secondNumber % 2 == 0)
-                sum += secondNumber;
+                firstNumber = secondNumber;
+                secondNumber = sumNumbers;
+                sumNumbers = firstNumber + secondNumber;
+            }
+            System.out.println(sum);
+            return sum;
         }
-        while (secondNumber < 4000000);
-        System.out.println("Sum of the even-valued terms: " + sum);
-        return sum;
-    }
 }

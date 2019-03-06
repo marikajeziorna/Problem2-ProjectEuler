@@ -23,7 +23,7 @@ public class FibonacciCalculatorTest {
 //        When
         int result = FibonacciCalculator.calculate(firstNumber, secondNumber);
 //        Then
-        assertThat(result, is(8320400));
+        assertThat(result, is(3990));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class FibonacciCalculatorTest {
 //        When
         int result = FibonacciCalculator.calculate(firstNumber, secondNumber);
 //        Then
-        assertThat(result, is(5702887));
+        assertThat(result, is(3382));
     }
 }
 
