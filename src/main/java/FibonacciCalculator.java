@@ -1,11 +1,11 @@
 public class FibonacciCalculator {
 
-        public static int calculate(int firstNumber, int secondNumber) {
+        public static int calculate(int firstNumber, int secondNumber, int limit) {
 
 
             int sum = 0;
             int sumNumbers = firstNumber + secondNumber;
-            while (secondNumber < 4000) {
+            while (secondNumber < limit) {
                 if (secondNumber % 2 == 0) {
                     sum += secondNumber;
                 }
