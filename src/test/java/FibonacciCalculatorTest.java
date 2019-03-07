@@ -7,9 +7,9 @@ public class FibonacciCalculatorTest {
     @Test
     public void shouldReturnAlwaysSameValue() {
 //        Given
-        int resultA = FibonacciCalculator.calculate(1, 2, 4000000);
+        int resultA = FibonacciCalculator.calculate(4000000);
 //        When
-        int resultB = FibonacciCalculator.calculate(1, 2, 4000000);
+        int resultB = FibonacciCalculator.calculate(4000000);
 //        Then
         assertThat(resultA, is(resultB));
     }
@@ -22,9 +22,9 @@ public class FibonacciCalculatorTest {
         int limit = 4000000;
         int sum = 20000;
 //        When
-        int result = FibonacciCalculator.calculate(firstNumber, secondNumber, limit);
+        int result = FibonacciCalculator.calculate(limit);
 //        Then
-        assertThat(result, is(1285570));
+        assertThat(result, is(4613732));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class FibonacciCalculatorTest {
         int limit = 4000000;
         int sum = 20000;
 //        When
-        int result = FibonacciCalculator.calculate(firstNumber, secondNumber, limit);
+        int result = FibonacciCalculator.calculate(limit);
 //        Then
         assertThat(result, is(4613732));
     }
